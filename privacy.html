@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Siro Flow - Privacy Policy</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d22; --muted: #5a5f6e; --card: #f5f6fa; --line: #e3e5ee; --accent: #3b6cf5; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #14151c; --fg: #ecedf3; --muted: #a2a7b8; --card: #1c1e28; --line: #2b2e3c; --accent: #7fa0ff; } }
+  html { background: var(--bg); }
+  body { margin: 0 auto; max-width: 760px; padding: 32px 20px 64px; font: 16px/1.65 "Segoe UI", system-ui, sans-serif; color: var(--fg); }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; }
+  .meta { color: var(--muted); font-size: 14px; margin-bottom: 24px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; }
+  ul { padding-left: 22px; margin: 8px 0; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  .fa { direction: rtl; text-align: right; margin-top: 48px; padding-top: 8px; border-top: 1px solid var(--line); font-family: "Vazirmatn", "Segoe UI", Tahoma, sans-serif; }
+</style>
+</head>
+<body>
+<h1>Siro Flow - Privacy Policy</h1>
+<div class="meta">Last updated: 2026-10-18 &middot; Publisher: Siro Flow &middot; Contact: <a href="mailto:siroaiadvisor@gmail.com">siroaiadvisor@gmail.com</a></div>
+
+<p>Siro Flow is a Windows app that turns your speech into text: you hold a key, speak, and the text is typed into the app you are using. This page explains what happens to your data.</p>
+
+<h2>What the app does with your voice and text</h2>
+<ul>
+  <li><b>Microphone.</b> The microphone is used only while you hold the dictation key. Nothing is recorded in the background.</li>
+  <li><b>Speech-to-text.</b> The recording is sent over an encrypted connection to the speech-to-text service you configured in the app, using <b>your own API key</b>: ElevenLabs first, then Groq or OpenAI if the first one fails. These companies process your audio under their own terms and privacy policies.</li>
+  <li><b>Text clean-up.</b> The transcript is sent to Groq's language model to remove filler words and add punctuation, together with the <b>name and kind of the app you are typing into</b> (for example "outlook, email") and the names and terms from your personal vocabulary list. The window title is never sent.</li>
+  <li><b>No Siro Flow server.</b> This version of Siro Flow has no servers of its own. We do not receive, store or see your audio, your text or your keys.</li>
+</ul>
+
+<h2>What stays on your PC</h2>
+<ul>
+  <li><b>Your API keys</b> are stored in Windows Credential Manager, encrypted for your Windows account.</li>
+  <li><b>History.</b> The text of your recent dictations (original and cleaned) is kept in a small local database so you can paste the last one again. It is kept for 30 days by default and can be switched off or deleted in Settings. <b>Audio is never stored.</b></li>
+  <li><b>Your vocabulary, snippets and style settings</b> are plain files in your user profile.</li>
+</ul>
+
+<h2>What we do not do</h2>
+<p class="card">No advertising, no analytics or telemetry, no selling or sharing of data, no accounts.</p>
+
+<h2>Your choices</h2>
+<ul>
+  <li>Uninstall the app to stop all processing.</li>
+  <li>Delete your history, or remove your API keys, in Siro Flow's Settings.</li>
+  <li>To delete data held by ElevenLabs, Groq or OpenAI, use those services' own controls.</li>
+</ul>
+
+<h2>Children</h2>
+<p>Siro Flow is not directed at children under 13.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new date appears at the top of this page. Questions: <a href="mailto:siroaiadvisor@gmail.com">siroaiadvisor@gmail.com</a>.</p>
+
+<div class="fa" lang="fa">
+  <h2>سیاست حریم خصوصی Siro Flow (خلاصه به فارسی)</h2>
+  <ul>
+    <li>میکروفن فقط وقتی کلید دیکته را نگه داشته‌اید روشن است.</li>
+    <li>صدا با کلید API <b>خودتان</b> به سرویس تبدیل گفتار به متن (ElevenLabs، در صورت خطا Groq یا OpenAI) فرستاده می‌شود. متن برای مرتب‌سازی به Groq می‌رود، همراه نام و نوع برنامه‌ای که در آن می‌نویسید (نه عنوان پنجره).</li>
+    <li>Siro Flow در این نسخه سرور ندارد؛ صدا، متن و کلیدهای شما را نمی‌بیند و ذخیره نمی‌کند.</li>
+    <li>کلیدها در Windows Credential Manager ذخیره می‌شوند. تاریخچهٔ متن‌ها فقط روی کامپیوتر شما و به‌طور پیش‌فرض ۳۰ روز می‌ماند (قابل خاموش یا پاک کردن). صدا هرگز ذخیره نمی‌شود.</li>
+    <li>تبلیغات، تحلیل رفتار (analytics) و فروش اطلاعات وجود ندارد.</li>
+  </ul>
+</div>
+</body>
+</html>
